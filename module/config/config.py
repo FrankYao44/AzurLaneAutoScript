@@ -301,9 +301,7 @@ class AzurLaneConfig(ConfigUpdater, ManualConfig, GeneratedConfig, ConfigWatcher
 
         force_enable(
             [
-                "Commission",
-                "Research",
-                "Reward",
+
             ]
         )
         limit_next_run(["Commission", "Reward"], limit=now + timedelta(hours=12, seconds=-1))
